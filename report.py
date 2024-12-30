@@ -1,3 +1,4 @@
+from info import *
 from telethon import TelegramClient, events
 from telethon.tl.functions.account import ReportPeerRequest
 from telethon.tl.types import (
@@ -16,9 +17,9 @@ import time
 import sys
 from termcolor import colored
 
-api_id = 1234567
-api_hash = "your_api_hash"
-phone_number = "+918887275626"
+api_id = API_ID
+api_hash = API_HASH
+phone_number = PHONE_NUMBER
 
 report_reasons = {
     1: ("I don't like it", InputReportReasonOther()),
